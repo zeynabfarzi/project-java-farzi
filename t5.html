@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>intellingent forms</title>
+<script>
+function yes(){
+mmdiv.style.visibility='visible';
+mainform.makemodel.focus();
+}
+function no(){ocus()
+mmdiv.style.visibility='hidden';
+}
+</script>
+</head>
+<body>
+<form name="mainform">
+do you own a printer?
+<input type="radio"name="printer"onclick="yes();">yes
+<input type="radio"name="printer"
+onclick="no();"checked>no
+<br>
+<div id="mmdiv"style="visibility:hidden">
+<label for="makemodel">
+<input type="text"id="makemodel">
+make andmodel</label>
+</div>
+<br>
+<input type="submit">
+<input type="reset">
+</form>
+</body>
+</html>

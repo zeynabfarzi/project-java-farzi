@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>validating large radio fields</title>
+<script>
+function validate(){
+icok=false;
+for(ic=0;ic<5;ic++){
+if(mainfrom.icecream[ic].checked)icok=true;
+}
+if(!icok){
+alert('your favorite ice cream flavor is a required field.please try again.')
+event.returnvalue=false;
+}
+}
+</script>
+</head>
+<body>
+<form name ="mainfrom" action="http//:your domain here/cgi-bin/post-query"
+method="post" onsubmit="validate();">
+<br>
+<input type="radio"name="icecream"value="vanilla">vanilla
+<input type="radio"name="ice cream"
+value="choc">chocolate
+<input typ="radio"name="icecream"
+value="straw">strawberry
+<input type="radio"name="icecream"
+value="raspr">raspberry ripple
+<input type="radio"name="icecream"value="mint">mint
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
